@@ -6,7 +6,7 @@ function App() {
   const[calc,setCalc]=useState("");
   const[res,setRes]=useState("");
 
-  const ops=['/','*','+','-','.'];
+  const ops=['/','*','+','.'];
 
   const updateCalc= value =>{
     //We cannot introduce double signs or introduce a sign when there is no number
