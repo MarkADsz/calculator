@@ -1,0 +1,82 @@
+:root{
+  --light:#E4E6DB;
+  --dark:#282a3a;
+  --operations:#d66853;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+body{
+  background-color: var(--light);
+}
+.App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.calculator{
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 47px -7px rgba(0,0,0,0.40);
+} 
+.display{
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 20px;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 400; 
+}
+
+.display span{
+  font-size: 14px;
+  color: #585c6f;
+  margin-right: 7px;
+  
+}
+
+button{
+  color: var(--light);
+  appearance: none;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  padding: 17px;
+  height: 15vh;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover{
+  opacity: 0.85;
+}
+
+.operators{
+  display: flex;
+
+}
+.operators button{
+  flex: 1;
+  background-color: var(--operations);
+  font-weight: 700;
+}
+
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button{
+  flex: 1 1 33.333%;
+  max-width:33.3333%;
+  background-color: var(--dark);
+}
